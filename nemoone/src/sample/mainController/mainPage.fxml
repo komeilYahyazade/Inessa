@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainController.MainController">
+   <children>
+      <Button layoutX="258.0" layoutY="34.0" mnemonicParsing="false" onAction="#refreshAction" text="Refresh" />
+      <ImageView fx:id="avatar" fitHeight="62.0" fitWidth="56.0" layoutX="530.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="516.0" layoutY="86.0" mnemonicParsing="false" onAction="#profileHandler" text="My Profile" />
+      <ListView fx:id="accountList" layoutX="128.0" layoutY="99.0" onMousePressed="#listClick" prefHeight="250.0" prefWidth="316.0" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitHandler" text="Exit" />
+      <Button layoutX="638.0" layoutY="380.0" mnemonicParsing="false" onAction="#chooseImageToSend" text="choose image to send" />
+   </children>
+</Pane>
